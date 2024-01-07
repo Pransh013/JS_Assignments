@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Age Calculator</title>
+  </head>
+  <body class="w-full h-screen border-2 border-red-500 flex items-center justify-between">
+    <div class="max-w-screen flex flex-col mx-auto border-2 border-black">
+      <h1 class=" text-2xl font-bold">Age Calculator</h1>
+      <h3>Enter your Date of Birth</h3>
+      <form>
+        <input type="date" placeholder="date" id="date" />
+        <button type="button" id="button" onclick="getDOB()">
+          Calculate Age
+        </button>
+      </form>
+      <p id="p">Your age is 21 years old</p>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
