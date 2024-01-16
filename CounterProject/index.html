@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+  </head>
+  <body class="h-screen flex flex-col gap-4 bg-gradient-to-r from-teal-500 to-cyan-500 justify-center items-center">
+    <div class="flex gap-8 items-center">
+      <button id="add" type="button" class="px-4 text-xl font-semibold py-1 border-2 border-black rounded-md bg-slate-300"> + </button>
+      <p id="score" class="underline text-lg">Score : 0</p>
+      <button id="subtract" type="button" class="px-4 py-1 border-2 text-xl font-semibold border-black rounded-md bg-slate-300"> - </button>
+    </div>
+    <button id="reset" type="button" class="px-6 py-1 border-2 border-black rounded-md font-semibold bg-slate-300">Reset</button>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
