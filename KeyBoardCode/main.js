@@ -5,23 +5,8 @@ const history = [];
 
 let key = "";
 
-document.body.addEventListener("keydown", (e) => {
-  if(key.length == 0) key += e.key;
-  document.addEventListener('keyup', (e) => {
-    if(e.key == key) print();
-  })
-  addHistory(e.key, e.keyCode);
+document.body.addEventListener("keyup", (e) => {
+  if (e.key == " ") h1.innerText = `You pressed Space`;
+  else h1.innerText = `You pressed ${e.key}`;
+  child.innerText = `${e.keyCode}`;
 });
-
-function addHistory(key, keyCode) {
-  history.push(key, keyCode);
-  console.log(history);
-}
-
-function print() {
-  for (let i = 0; i < history.length; ) {
-    h1.innerText = `You pressed ${history[i++]}`;
-    child.innerText = `${history[i++]}`;
-    key = "";
-  }
-}
