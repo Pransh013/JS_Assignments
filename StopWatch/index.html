@@ -5,7 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body
+    class="w-full h-screen flex items-center justify-center bg-gradient-to-tr from-orange-700 to-violet-500"
+  >
+    <div class="h-60 w-96 border-2 border-orange-700 rounded-md flex flex-col gap-4 items-center justify-center shadow-xl">
+      <p class="text-4xl text-gray-200">Stop - Watch</p>
+      <p id="time" class="text-2xl text-gray-200">00:00:00</p>
+      <div class="flex gap-3 text-xl text-white">
+        <button
+          id="start"
+          class="px-3 py-1 bg-gray-500 border-2 border-black rounded-md outline-none"
+          onclick="startStopWatch()"
+        >
+          Start
+        </button>
+        <button
+          id="stop"
+          class="px-3 py-1 bg-gray-500 border-2 border-black rounded-md outline-none"
+          onclick="stopStopWatch()"
+        >
+          Stop
+        </button>
+        <button
+          id="reset"
+          class="px-3 py-1 bg-gray-500 border-2 border-black rounded-md outline-none"
+          onclick="resetStopWatch()"
+        >
+          Reset
+        </button>
+      </div>
+    </div>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="main.js"></script>
   </body>

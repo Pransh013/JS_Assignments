@@ -8,14 +8,14 @@
   <body
     class="w-full h-screen flex justify-center items-center bg-gradient-to-tr from-orange-700 to-violet-500"
   >
-    <div class="border-2 p-12 border-black">
-      <div>
-        <p class="">00:00:00</p>
-        <p>Am</p>
+    <div class="flex justify-center items-center flex-col p-12 rounded">
+      <div class="text-3xl text-zinc-800 mb-4 text- flex gap-2 items-center">
+        <p id="time">00:00:00</p>
+        <p id="ampm">Am</p>
       </div>
-      <select name="Format" id="">
-        <option value="">24 hours</option>
-        <option value="">12 hours</option>
+      <select name="" id="format" class="bg-inherit outline-none border-2 px-4 py-2 rounded-md border-black">
+        <option value="12" class="bg-transparent">12 hours</option>
+        <option value="24" class="bg-transparent">24 hours</option>
       </select>
     </div>
     <script src="https://cdn.tailwindcss.com"></script>
