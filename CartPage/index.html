@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <script src="main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body
+    class="h-screen flex gap-4 bg-gradient-to-r from-teal-500 to-cyan-500 justify-center items-center"
+  >
+    <div class="border-2">
+      <p>Product</p>
+      <div>
+        <div>Product - 1</div>
+        <div id="price">100</div>
+        <div>
+          <button
+            id="add"
+            type="button"
+            class="px-4 text-xl font-semibold py-1 border-2 border-black rounded-md bg-slate-300"
+          >
+            +
+          </button>
+          <p id="score" class="underline text-lg">0</p>
+          <button
+            id="subtract"
+            type="button"
+            class="px-4 py-1 border-2 text-xl font-semibold border-black rounded-md bg-slate-300"
+          >
+            -
+          </button>
+        </div>
+      </div>
+      <div>
+        <div>Product - 2</div>
+        <div id="price">200</div>
+        <div>
+          <button
+            id="add"
+            type="button"
+            class="px-4 text-xl font-semibold py-1 border-2 border-black rounded-md bg-slate-300"
+          >
+            +
+          </button>
+          <p id="score" class="underline text-lg">0</p>
+          <button
+            id="subtract"
+            type="button"
+            class="px-4 py-1 border-2 text-xl font-semibold border-black rounded-md bg-slate-300"
+          >
+            -
+          </button>
+        </div>
+      </div>
+      <div>
+        <div>Product - 3</div>
+        <div id="price">300</div>
+        <div>
+          <button
+            id="add"
+            type="button"
+            class="px-4 text-xl font-semibold py-1 border-2 border-black rounded-md bg-slate-300"
+          >
+            +
+          </button>
+          <p id="score" class="underline text-lg">0</p>
+          <button
+            id="subtract"
+            type="button"
+            class="px-4 py-1 border-2 text-xl font-semibold border-black rounded-md bg-slate-300"
+          >
+            -
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="border-2">
+      <p>Cart</p>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
