@@ -6,6 +6,11 @@ let secret = document.querySelector("#secret");
 
 submit.addEventListener("click", () => {
   input = document.querySelector("#input").value;
+  let trimmedInput = input.trim();
+  if(trimmedInput === "") {
+    alert("Enter some text");
+    return;
+  }
   container.innerHTML = " ";
   displayData();
 });
@@ -36,13 +41,13 @@ function displayData() {
       let card = document.createElement("div");
       card.setAttribute(
         "class",
-        "flex flex-col items-center w-96 h-72 border-2 bg-gray-600 border-gray-700 rounded-lg shadow-lg pb-2"
+        "flex flex-col items-center w-80 md:w-96 h-60 md:h-72 border-2 bg-gray-600 border-gray-700 rounded-lg shadow-lg pb-2"
       );
 
       let img = document.createElement("img");
       var imgAttributes = {
         src: val.links.download,
-        class: "w-full h-52 object-cover rounded-md",
+        class: "w-full h-44 md:h-52 object-cover rounded-md",
       };
 
       for (var key in imgAttributes) {
