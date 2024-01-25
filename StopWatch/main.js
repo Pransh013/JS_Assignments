@@ -4,10 +4,10 @@ let seconds = 0;
 let startInterval;
 function startStopWatch() {
   clearInterval(startInterval);
-   startInterval = setInterval(() => {
-     seconds++;
-     showTimer();
-   }, 1000);
+  startInterval = setInterval(() => {
+    seconds++;
+    showTimer();
+  }, 1000);
 }
 function stopStopWatch() {
   clearInterval(startInterval);
