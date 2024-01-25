@@ -1,7 +1,7 @@
 let time = document.querySelector("#time");
-
 let seconds = 0;
 let startInterval;
+
 function startStopWatch() {
   clearInterval(startInterval);
   startInterval = setInterval(() => {
