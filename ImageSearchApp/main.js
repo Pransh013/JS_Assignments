@@ -28,7 +28,7 @@ function displayData() {
       `https://api.unsplash.com/search/photos?page=${page}&query=${input}&client_id=RZEIOVfPhS7vMLkFdd2TSKGFBS4o9_FmcV1Nje3FSjw`
     );
     const json = await data.json();
-
+      console.log(json);
     if(json.results.length === 0) {
       container.innerHTML = "Looks like there are no items matching to your search. Try some other words 😴😴😴";
       more.classList.add("hidden");
@@ -46,7 +46,7 @@ function displayData() {
 
       let img = document.createElement("img");
       var imgAttributes = {
-        src: val.links.download,
+        src: val.urls.small,
         class: "w-full h-44 md:h-52 object-cover rounded-md",
       };
 

@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Digital Clock</title>
+    <title>Joke Generator</title>
   </head>
   <body
-    class="w-full h-screen flex justify-center items-center bg-gradient-to-tr from-orange-700 to-violet-500"
+    class="w-full h-screen flex justify-center items-center bg-gradient-to-tr from-orange-700 to-violet-500 px-36"
   >
+    <div class="flex flex-col w-full items-center gap-6  px-10 py-16 shadow-xl">
+      <p class="text-3xl font-semibold text-gray-400">Dad Joke Generator</p>
+      <p id="content" class="text-lg text-slate-800">Wanna hear a joke, Click below!!!</p>
+      <button id="btn" class="border-2 px-2 py-1 rounded-md text-white bg-[#0000006c]">Tell Me A Joke</button>
+    </div>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="main.js"></script>
   </body>
