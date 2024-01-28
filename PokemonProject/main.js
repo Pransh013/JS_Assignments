@@ -4,10 +4,9 @@ let container = document.querySelector("#container");
 let type = document.querySelector("#type");
 let typesOf = document.querySelector("#typesOf");
 const allPokemons = [];
-let card;
 
 const TYPE_FETCH_URL = "https://pokeapi.co/api/v2/type/";
-const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/?limit=10";
+const POKEMON_URL = "https://pokeapi.co/api/v2/pokemon/?limit=100";
 
 const colors = {
   grass: "#9BC956",
@@ -70,7 +69,7 @@ async function getAllPokemons() {
   console.log(json);
 
   json.results.forEach((val) => {
-    card = document.createElement("div");
+    let card = document.createElement("div");
     let cardColor;
     let pokeData;
     let img = document.createElement("img");
@@ -116,12 +115,12 @@ async function getAllPokemons() {
   });
 }
 
-if(card) {
-  card.addEventListener("click", showInfo);
+// if(card) {
+//   card.addEventListener("click", showInfo);
 
-  let backstroke = document.querySelector("#backstroke");
-  function showInfo() {
-    backstroke.classList.remove("hidden");
-    backstroke.classList.add(" flex");
-  }
-}
+//   let backstroke = document.querySelector("#backstroke");
+//   function showInfo() {
+//     backstroke.classList.remove("hidden");
+//     backstroke.classList.add(" flex");
+//   }
+// }
