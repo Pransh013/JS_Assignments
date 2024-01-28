@@ -45,12 +45,12 @@ function displayData() {
       );
 
       let img = document.createElement("img");
-      var imgAttributes = {
+      let imgAttributes = {
         src: val.urls.small,
         class: "w-full h-44 md:h-52 object-cover rounded-md",
       };
 
-      for (var key in imgAttributes) {
+      for (let key in imgAttributes) {
         img.setAttribute(key, imgAttributes[key]);
       }
 
