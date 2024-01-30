@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5LWFz4zDpv9lsQa_NxcejturIZI6ydwarQw&usqp=CAU" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5LWFz4zDpv9lsQa_NxcejturIZI6ydwarQw&usqp=CAU"
+      type="image/x-icon"
+    />
     <title>PokeMon App</title>
     <style>
       .cws::-webkit-scrollbar {
@@ -12,14 +16,14 @@
     </style>
   </head>
   <body
-    class="font-mono w-full min-h-screen flex flex-col items-center justify-start gap-10 bg-gradient-to-tr from-zinc-800 to-slate-500 pb-8"
+    class="font-mono w-full min-h-screen flex flex-col items-center justify-start gap-10 bg-gradient-to-tr from-zinc-800 to-slate-500"
   >
-    <div id="backstroke" class="w-screen h-screen bg-[#0000006f] hidden absolute z-10"></div>
     <div
-      id="typesOf"
-      class="hidden cws w-44 h-52 absolute right-56 top-4 overflow-scroll bg-gray-300 border-2 border-black rounded-md flex-wrap justify-between p-1 gap-0.5"
+      id="backstroke"
+      class="w-screen h-screen bg-[#0000006f] hidden absolute z-10"
     ></div>
-    <div class="flex items-center justify-center flex-col gap-4 pt-10">
+
+    <div class="flex items-center min-h-80 justify-around mt-6 flex-col gap-4">
       <p class="text-3xl md:text-5xl font-semibold text-center text-[#1b1a1a]">
         Pokemon Search App
       </p>
@@ -39,14 +43,18 @@
         >
           Search
         </button>
-      </div> 
+      </div>
       <div id="type" class="px-6 py-1 bg-gray-400 rounded-md cursor-pointer">
         Type
       </div>
+      <div
+        id="typesOf"
+        class="flex opacity-0 pointer-events-none cws w-1/2 h-20 overflow-scroll bg-gray-300 border-2 border-black rounded-md flex-wrap justify-between p-1 gap-0.5"
+      ></div>
     </div>
     <div
       id="container"
-      class="flex border-2 text-gray-300 mt-12 justify-center text-xl md:text-3xl text-center flex-wrap gap-12 px-6 md:px-12 xl:px-22"
+      class="flex text-gray-300 justify-center text-xl mb-10 md:text-3xl text-center flex-wrap gap-12 px-6 md:px-12 xl:px-22"
     ></div>
     <button
       id="more"

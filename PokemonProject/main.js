@@ -28,17 +28,21 @@ const colors = {
 
 submit.addEventListener("click", () => {
   let inputText = input.value;
-  console.log(inputText);
+  // console.log(inputText);
 });
 
 let flag = false;
 type.addEventListener("click", () => {
   if (flag) {
-    typesOf.classList.add("hidden");
-    typesOf.classList.remove("flex");
+    typesOf.classList.add("opacity-0");
+    typesOf.classList.add("pointer-events-none");
+    typesOf.classList.remove("pointer-events-auto");
+    typesOf.classList.remove("opacity-100");
   } else {
-    typesOf.classList.add("flex");
-    typesOf.classList.remove("hidden");
+    typesOf.classList.add("pointer-events-auto");
+    typesOf.classList.add("opacity-100");
+    typesOf.classList.remove("opacity-0");
+    typesOf.classList.remove("pointer-events-none");
   }
   flag = !flag;
 });
@@ -66,7 +70,7 @@ async function getTypeData() {
 async function getAllPokemons() {
   const data = await fetch(POKEMON_URL);
   const json = await data.json();
-  console.log(json);
+  // console.log(json);
 
   json.results.forEach((val) => {
     let card = document.createElement("div");
